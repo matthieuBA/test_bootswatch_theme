@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TestBootswatchTheme</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+<div class="btn-group-vertical">
+                  <a href="/pages/authentification_form" class="btn btn-primary" role="button" aria-pressed="true">Authentification form</a>
+                  <a href="/pages/users_index" class="btn btn-secondary" role="button" aria-pressed="true">Users</a>
+                  <a href="/pages/banner_lg" class="btn btn-secondary" role="button" aria-pressed="true">Banner Large</a>
+                  <a href="/pages/banner_sm" class="btn btn-primary" role="button" aria-pressed="true">Banner Small</a>
+                  <a href="/pages/cities_index" class="btn btn-secondary" role="button" aria-pressed="true">Cities Index</a>
+                  <a href="/pages/event_users_index" class="btn btn-primary" role="button" aria-pressed="true">Event User</a>
+                  <a href="/pages/events_index" class="btn btn-secondary" role="button" aria-pressed="true">Events Index</a>
+                  <a href="/pages/footer" class="btn btn-primary" role="button" aria-pressed="true">Footer</a>
+                  <a href="/pages/forget_password" class="btn btn-secondary" role="button" aria-pressed="true">Forget Password</a>
+                  <a href="/pages/header" class="btn btn-primary" role="button" aria-pressed="true">Header</a>
+                  <a href="/pages/navbar" class="btn btn-secondary" role="button" aria-pressed="true">NavBar</a>
+                  <a href="/pages/password_edit" class="btn btn-primary" role="button" aria-pressed="true">Password Edit</a>
+                  <a href="/pages/choice" class="btn btn-secondary" role="button" aria-pressed="true">Choice</a>
+                  <a href="/pages/sign_in" class="btn btn-primary" role="button" aria-pressed="true">Sign in</a>
+                  <a href="/pages/sign_up" class="btn btn-secondary" role="button" aria-pressed="true">Sign up</a>
+                  <a href="/pages/comments" class="btn btn-secondary" role="button" aria-pressed="true">Comments</a>
+</div>
+    <%= yield %>
+  </body>
+</html>
